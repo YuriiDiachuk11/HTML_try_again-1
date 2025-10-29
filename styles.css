@@ -23,6 +23,9 @@ ul {
   padding: 0;
   margin: 0;
 }
+input {
+  font-family: inherit;
+}
 .header {
   display: flex;
   padding: 24px 156px;
@@ -51,6 +54,15 @@ ul {
   gap: 48px;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/people-office\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2e2f42 70%;
+  background-position: center;
 }
 .title {
   font-family: var(--font-family);
@@ -82,18 +94,39 @@ ul {
 .advantages-section {
   padding: 120px 156px;
 }
+
 .advantages-list {
   display: flex;
   gap: 24px;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.image-box {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.icon {
+  width: 64px;
+  height: 64px;
 }
 .advantages-title {
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+.advantages-item {
+  width: 262px;
 }
 .advantages-text {
   font-family: var(--font-family);
@@ -133,12 +166,21 @@ ul {
 .team-name {
 }
 .team-text {
+  margin-bottom: 8px;
 }
 .team-name-box {
   padding: 16px 32px;
   background-color: #fff;
   margin: 0 auto;
   text-align: center;
+}
+.team-links-box {
+}
+.links-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio-section {
   padding: 120px 156px;
@@ -186,6 +228,8 @@ ul {
 .footer {
   padding: 100px 156px;
   background-color: #2e2f42;
+  display: flex;
+  gap: 120px;
 }
 .footer-link {
   font-family: var(--second-family);
@@ -211,4 +255,158 @@ ul {
 .footer-box {
   width: 264px;
   height: 112px;
+}
+.footer-media-box {
+  width: 208px;
+  height: 80px;
+}
+.footer-media-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.modal-overlay {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/people-office\ 1.png);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/people-office\ 1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  opacity: 0;
+  pointer-events: none;
+}
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal {
+  border-radius: 4px;
+  width: 408px;
+  height: 577px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 24px;
+  padding-top: 65px;
+}
+form {
+}
+.form-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  position: relative;
+}
+.form-label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+.form-input {
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.form-textarea {
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  margin-bottom: 16px;
+}
+.accept {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 24px;
+}
+.accept-span {
+  line-height: 133%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.button {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 37px;
+  transform: translateY(-50%);
+}
+.checkbox {
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+  fill: #fff;
+}
+.policy-box {
+  display: flex;
+  gap: 8px;
 }
