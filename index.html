@@ -14,24 +14,10 @@
   </head>
   <body>
     <header class="header">
-      <a href="">Web<span>Studio</span></a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <p>Studio</p>
-          </li>
-          <li class="nav-item">
-            <p>Portfolio</p>
-          </li>
-          <li class="nav-item">
-            <p>Contacts</p>
-          </li>
-        </ul>
-      </nav>
-      <div class="contact-box">
-        <a href="tel:+380997565432">+380997565432</a>
-        <a href="mailto:ivanpele@gmail.com">ivanpele@gmail.com</a>
-      </div>
+      <a class="web" href="">Web<span class="studio">Studio</span></a>
+      <svg width="24" height="24">
+        <use href="./images/symbol-defs.svg#icon-menu"></use>
+      </svg>
     </header>
     <main>
       <!-- TITLE -->
@@ -241,8 +227,20 @@
           <li><img src="./images/Ellipse (3).png" alt="" /></li>
         </ul>
       </div>
+      <div class="subscribe-box">
+        <p class="sub-text">Subscribe</p>
+        <input class="sub-input" type="text" placeholder="E-mail" />
+        <div class="sub-button-box">
+          <button class="sub-button" type="submit">
+            Subscribe
+            <svg class="icon-send" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </footer>
-    <div class="overlay">
+    <!-- <div class="overlay">
       <div class="modal">
         <form action="">
           <p class="form-title">
@@ -289,6 +287,44 @@
 
           <button class="button" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+
+    <!-- MENU -->
+
+    <div class="menu">
+      <div class="">
+        <button class="menu-btn">
+          <svg width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <p>Studio</p>
+            </li>
+            <li class="nav-item">
+              <p>Portfolio</p>
+            </li>
+            <li class="nav-item">
+              <p>Contacts</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact-box">
+        <a href="tel:+380997565432">+380997565432</a>
+        <a href="mailto:ivanpele@gmail.com">ivanpele@gmail.com</a>
+      </div>
+      <div>
+        <ul class="menu-links-list">
+          <li><img src="./images/Ellipse.png" alt="" /></li>
+          <li><img src="./images/Ellipse (1).png" alt="" /></li>
+          <li><img src="./images/Ellipse (2).png" alt="" /></li>
+          <li><img src="./images/Ellipse (3).png" alt="" /></li>
+        </ul>
       </div>
     </div>
   </body>
