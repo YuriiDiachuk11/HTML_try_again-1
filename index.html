@@ -14,11 +14,32 @@
   </head>
   <body>
     <header class="header">
-      <a class="web" href="">Web<span class="studio">Studio</span></a>
-      <svg width="24" height="24">
-        <use href="./images/symbol-defs.svg#icon-menu"></use>
-      </svg>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="web" href="">Web<span class="studio">Studio</span></a>
+          <svg class="header-logo" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+          <ul class="header-list">
+            <li>
+              <a class="header-item-link link-studio" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li><a class="header-item-link" href="">Portfolio</a></li>
+            <li><a class="header-item-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="header-address">
+          <ul>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+      </div>
     </header>
+
     <main>
       <!-- TITLE -->
       <section class="title-container">
@@ -229,8 +250,9 @@
       </div>
       <div class="subscribe-box">
         <p class="sub-text">Subscribe</p>
-        <input class="sub-input" type="text" placeholder="E-mail" />
-        <div class="sub-button-box">
+
+        <div class="sub-form">
+          <input class="sub-input" type="text" placeholder="E-mail" />
           <button class="sub-button" type="submit">
             Subscribe
             <svg class="icon-send" width="24" height="24">
